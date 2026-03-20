@@ -1,0 +1,147 @@
+/* Color System */
+:root {
+  --bg: #f5efe7;
+  --card: #ffffff;
+  --text-primary: #111827;
+  --text-secondary: #6b7280;
+  --accent: #2563eb;
+  --tag-bg: #eef2ff;
+  --border: #e5e7eb;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* Page Background */
+.parent {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--bg);
+}
+
+/* Card */
+.card {
+  width: 340px;
+  background: var(--card);
+  border-radius: 24px;
+  padding: 22px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08);
+}
+
+/* Top Section */
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.top img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--border);
+}
+
+/* Save Button */
+.top button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border: 1px solid var(--border);
+  background: transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 13px;
+  color: var(--text-secondary);
+  transition: 0.2s;
+}
+
+.top button:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* Center */
+.center {
+  margin-top: 16px;
+}
+
+/* Company + Time */
+.center h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.center h3 span {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-left: 6px;
+}
+
+/* Role */
+.center h2 {
+  font-size: 20px;
+  margin: 8px 0 12px;
+  color: var(--text-primary);
+}
+
+/* Tags */
+.center div {
+  display: flex;
+  gap: 10px;
+}
+
+.center div h4 {
+  font-size: 12px;
+  background: var(--tag-bg);
+  color: var(--accent);
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-weight: 500;
+}
+
+/* Bottom */
+.bottom {
+  margin-top: 20px;
+}
+
+.bottom h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.bottom p {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-top: 3px;
+}
+
+/* Apply Button */
+.card > button {
+  margin-top: 18px;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: var(--text-primary);
+  color: #fff;
+  border-radius: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.card > button:hover {
+  background: #000;
+}
