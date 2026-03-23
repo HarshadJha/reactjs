@@ -1,6 +1,6 @@
 /* Color System */
 :root {
-  --bg: #f5efe7;
+  --bg: #e1c3c3;
   --card: #ffffff;
   --text-primary: #111827;
   --text-secondary: #6b7280;
@@ -19,19 +19,27 @@
 
 /* Page Background */
 .parent {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background: var(--bg);
+  flex-wrap : wrap;
+  gap: 30px;
+}
+div.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap : 30px;
 }
 
 /* Card */
 .card {
-  width: 340px;
+  width: 310px;
   background: var(--card);
   border-radius: 24px;
-  padding: 22px;
+  padding: 25px;
   box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08);
 }
 

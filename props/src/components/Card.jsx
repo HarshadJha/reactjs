@@ -1,25 +1,28 @@
 import { Bookmark } from 'lucide-react'
-const Card = () => {
+const Card = (props) => {
+
+    console.log(props);
+    
 
     return (
         <div className='parent'>
             <div className='card'>
                 <div className="top">
-                    <img src="https://i.pinimg.com/1200x/a9/63/b3/a963b31cb9910acd1674d0745542fa4c.jpg" alt="" />
+                   <img src={props.brandLogo} alt="" />                   
                     <button>Save <Bookmark /></button>
                 </div>
                 <div className='center'>
-                    <h3>Amazon <span>5 days ago</span></h3>
-                    <h2>Senior UI/UX Designer</h2>
+                    <h3>{props.company}<span>{props.datePosted}</span></h3>
+                    <h2>{props.post}</h2>
                     <div>
-                        <h4>Part Time</h4>
-                        <h4>Senior Level</h4>
+                        <h4>{props.tag1}</h4>
+                        <h4>{props.tag2}</h4>
                     </div>
                 </div>
 
                 <div className='bottom'>
-                            <h3>120$/hr</h3>
-                            <p>Ghaziabad, India</p>
+                            <h3>{props.pay}$/hr</h3>
+                            <p>{props.location}</p>
                         </div>
                         <button>Apply Now</button>
                     </div>
